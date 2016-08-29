@@ -1,0 +1,31 @@
+var fighting = true
+var youHit = Math.floor(Math.random() * 2)
+var damageThisRound = Math.floor(Math.random() * 5 + 1)
+var damageFromVader = Math.floor(Math.random() * 3 + 1)
+var totalDamage=0
+var playerHealth=5
+
+while(fighting) {
+    if(youHit){
+        console.log("You Slash him with your lightsaber!" + damageThisRound + " damage!")
+        totalDamage += damageThisRound;
+        if(totalDamage>=10){            
+            console.log("You defeated Darth Vader!")
+            fighting=false            
+        }
+        else {
+            youHit = Math.floor(Math.random()*2)
+            damageThisRound=Math.floor(Math.random()*5 + 1)
+        }
+    }
+    else if(playerHealth>=1){
+         youHit = Math.floor(Math.random()*2)
+        console.log("A red blur and you take " + damageFromVader + " damage!")
+        playerHealth -= damageFromVader
+        
+    }
+    else {
+        console.log("You have fallen to the strength of the Dark Side!")
+        fighting = false
+    }
+}
