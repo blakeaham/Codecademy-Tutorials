@@ -1,0 +1,14 @@
+var answer = prompt("Meghan, do you love me?","Type yes, no, or I don't know here")
+
+switch(answer) {
+  case 'yes':
+    console.log("aw, I love you too!");
+    break;
+  case 'no' :
+      console.log("That hurts, I guess love hurts...")
+      break;
+  default :
+       console.log("Well, that isn't an answer...")
+  // Add your code here!
+  
+}
