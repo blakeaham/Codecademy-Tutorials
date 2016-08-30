@@ -1,0 +1,37 @@
+var user = prompt("You're hungry but you don't have anything to eat! Do you LOOK AGAIN, GO TO BK, or SMOKE?").toUpperCase();
+
+switch(user){
+    case 'LOOK AGAIN':
+        console.log("The fridge is still empty.YOU LOSE")
+        break;
+    case 'GO TO BK':
+        var subAnswer=prompt("Do you have any money?").toUpperCase()
+        var subAnswer2=prompt("Do you have gas to get there?").toUpperCase()
+        
+        if (subAnswer==="YES" && subAnswer2==="YES"){
+            console.log("Got there, got tasty bits! YOU WIN!")
+        }
+        else{
+            console.log("Well then you can't get BK. U LOSE!")
+        };
+        break;
+    case'SMOKE':
+        console.log("That helped some. but, yaknow, lung cancer")
+        var subAnswer=prompt("Are you healthy?").toUpperCase()
+        var subAnswer2=prompt("Do you have health insurance?").toUpperCase()
+        if (subAnswer === "YES" || subAnswer2 === "YES"){
+            console.log("...I guess you don't have to worry about that though. YOU WIN!")
+        }
+        else{
+            console.log("...and it kills you. YOU LOSE!")
+        }
+        break;
+    default:
+        var subAnswer=prompt("Are you on acid?").toUpperCase()
+        if(subAnswer==="YES"){
+            console.log("Well, you don't need any food today. Just focus on you, and yourself...and the other you! YOU WIN!")
+        }
+        else{
+        console.log("You don't know what you're doing. U LOSE")
+        }
+};
