@@ -1,0 +1,48 @@
+var friends = {
+    bill: {
+        firstName:'Bill',
+        lastName:'Nye',
+        number:'555-2455',
+        address:['65 N Commerce','Hill Valley','CA','90124']
+        },
+    steve: {
+        firstName:'Steve',
+        lastName:'Nash',
+        number:'566-6655',
+        address:['13 Pain Lane','Death Valley','CA','89543']
+        },
+    meghan: {
+        firstName:'Meghan',
+        lastName:'Welch',
+        number:'680-2924',
+        address:['550 W Central','Wichita','KS','67236']
+        },
+    blake: {
+        firstName:'Blake',
+        lastName:'Hamilton',
+        number:'210-8540',
+        address:['2 Tradewind Ct.','Valley Center','KS','67147']
+        },
+}
+
+var list = function(friends) {
+    for(var firstName in friends){
+        console.log(firstName)
+    }
+}
+
+list()
+
+var search = function(blake){
+    for(var blake in friends){
+        if (friends[blake].firstName === "Blake"){
+            console.log(friends.blake)
+            return friends.blake;
+        }
+        else {
+            console.log("notfound")}
+    }
+};
+
+search('Blake')
+        
