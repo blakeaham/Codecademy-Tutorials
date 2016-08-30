@@ -1,0 +1,24 @@
+var answer = prompt("what system you game on, brah?","Type your fave console/handheld here")// Write your code below!
+
+switch(answer)  {
+    case'DS':
+        console.log("That's cool!")
+        for(i=0;i<=4;i++) {
+            console.log(answer + " is my favorite too!")
+            j=i
+            while(j<=3){
+                console.log("gaming")
+                j++
+            }
+        }
+    break;
+    case'PS4':
+        console.log("Add me! blakezilla26!")
+        break;
+    case'Wii':
+        console.log("I like the classics, mario, zelda, etc!")
+        break;
+    default:
+        console.log("I don't know what that is...")
+        break;
+};
