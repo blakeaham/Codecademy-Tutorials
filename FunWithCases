@@ -13,7 +13,14 @@ switch(answer)  {
         }
     break;
     case'PS4':
+        var games=prompt("How many games do you have?")
         console.log("Add me! blakezilla26!")
+        if (games>10){
+            console.log("Wow, that's a lot of games, maybe we can play some together")
+        }
+        else {
+            console.log("Hmm, I wonder if we have any of the same games...")
+        }
         break;
     case'Wii':
         console.log("I like the classics, mario, zelda, etc!")
